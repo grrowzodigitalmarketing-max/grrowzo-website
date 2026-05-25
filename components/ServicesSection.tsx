@@ -1,13 +1,46 @@
 import FadeUp from "./FadeUp";
+import {
+  FaCode,
+  FaSearch,
+  FaBullhorn,
+  FaPalette,
+  FaMobileAlt,
+  FaRobot,
+  FaVideo,
+} from "react-icons/fa";
 const services = [
-  "Website Development",
-  "SEO Optimization",
-  "Social Media Marketing",
-  "Meta Ads",
-  "Branding Design",
-  "App Development",
-  "AI Automation",
-  "Content Creation",
+  {
+    title: "Website Development",
+    icon: <FaCode />,
+  },
+  {
+    title: "SEO Optimization",
+    icon: <FaSearch />,
+  },
+  {
+    title: "Social Media Marketing",
+    icon: <FaBullhorn />,
+  },
+  {
+    title: "Meta Ads",
+    icon: <FaBullhorn />,
+  },
+  {
+    title: "Branding Design",
+    icon: <FaPalette />,
+  },
+  {
+    title: "App Development",
+    icon: <FaMobileAlt />,
+  },
+  {
+    title: "AI Automation",
+    icon: <FaRobot />,
+  },
+  {
+    title: "Content Creation",
+    icon: <FaVideo />,
+  },
 ];
 
 export default function ServicesSection() {
@@ -37,10 +70,12 @@ export default function ServicesSection() {
               key={index}
               className="group bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-purple-500/40 hover:-translate-y-2 transition duration-300"
             >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-600 to-cyan-500 mb-6" />
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-600 to-cyan-500 mb-6 flex items-center justify-center text-2xl text-white">
+  {service.icon}
+</div>
 
               <h3 className="text-2xl font-semibold mb-4">
-                {service}
+                {service.title}
               </h3>
 
               <p className="text-gray-400 leading-relaxed">

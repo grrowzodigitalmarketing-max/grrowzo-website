@@ -1,47 +1,100 @@
+
 "use client";
-
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center px-6 overflow-hidden">
+    <section
+  id="home"
+  className="relative min-h-screen flex items-center pt-32 md:pt-24 px-6 overflow-hidden"
+>
 
-      {/* Glow Effects */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-700/20 blur-3xl rounded-full" />
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-3xl rounded-full" />
+  {/* Background Video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/videos/hero-video.mp4" type="video/mp4" />
+  </video>
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
+
+  {/* Gradient Glow */}
+  <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-700/20 blur-3xl rounded-full" />
+  <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-3xl rounded-full" />
+{/* Floating Badges */}
+
+<div className="absolute top-32 left-10 hidden lg:flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur-xl px-5 py-3 rounded-full animate-pulse z-20">
+
+  <div className="w-3 h-3 rounded-full bg-cyan-400" />
+
+  <p className="text-sm text-white">
+    Reliable Agency
+  </p>
+
+</div>
+
+<div className="absolute bottom-32 right-10 hidden lg:flex items-center gap-3 bg-white/10 border border-white/10 backdrop-blur-xl px-5 py-3 rounded-full animate-pulse z-20">
+
+  <div className="w-3 h-3 rounded-full bg-purple-400" />
+
+  <p className="text-sm text-white">
+    100+ Projects Delivered
+  </p>
+
+</div>
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 md:gap-16 items-center relative z-10">
 
         {/* Left Content */}
         <div>
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-gray-300 mb-8">
-            Premium Digital Growth Agency
-          </div>
+          
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            We Build
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              {" "}Digital Experiences
-            </span>
-            <br />
-            That Drive Growth
-          </h1>
+          <motion.h1
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+  className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight"
+>
+
+  We Build{" "}
+
+  <span className="bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-[length:200%_200%] animate-gradient bg-clip-text text-transparent">
+    Digital Experiences
+  </span>
+
+  <br />
+
+  That Drive Growth
+
+</motion.h1>
 
           <p className="text-lg text-gray-400 leading-relaxed max-w-xl mb-10">
             We help brands grow with premium websites, branding,
             marketing, automation, and scalable digital solutions.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
 
-            <button className="bg-gradient-to-r from-purple-600 to-cyan-500 px-8 py-4 rounded-full font-medium hover:scale-105 hover:shadow-[0_0_40px_rgba(124,58,237,0.5)] transition-transform">
-              Start Your Project
-            </button>
+            <a
+  href="https://wa.me/918989866593?text=Hi%20Grrowzo%2C%20I%20want%20to%20start%20a%20project."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-cyan-500 px-6 sm:px-8 py-4 rounded-full font-medium text-base sm:text-lg hover:scale-105 active:scale-95 transition duration-300 shadow-[0_0_40px_rgba(168,85,247,0.5)] hover:shadow-[0_0_60px_rgba(34,211,238,0.7)] whitespace-nowrap text-center"
+>
+  Start Your Project
+</a>
 
-            <button className="border border-white/20 bg-white/5 backdrop-blur-lg px-8 py-4 rounded-full font-medium hover:bg-white/10 hover:scale-105 hover:shadow-[0_0_40px_rgba(124,58,237,0.5)] transition">
-              View Portfolio
-            </button>
+            <Link
+  href="/portfolio"
+  className="border border-white/20 px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-black transition duration-300 hover:scale-105 active:scale-95 whitespace-nowrap text-center"
+>
+  View Portfolio
+</Link>
 
           </div>
         </div>
@@ -124,6 +177,21 @@ export default function HeroSection() {
         </motion.div>
 
       </div>
+      {/* Scroll Indicator */}
+
+<div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 hidden md:flex flex-col items-center gap-3">
+
+  <p className="text-xs tracking-[4px] uppercase text-gray-400">
+    Scroll
+  </p>
+
+  <div className="w-[2px] h-16 bg-white/20 relative overflow-hidden rounded-full">
+
+    <div className="absolute top-0 left-0 w-full h-6 bg-gradient-to-b from-cyan-400 to-purple-500 animate-bounce rounded-full" />
+
+  </div>
+
+</div>
     </section>
   );
 }

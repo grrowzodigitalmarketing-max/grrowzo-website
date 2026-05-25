@@ -20,7 +20,14 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Grrowzo | Premium Digital Growth Agency",
   description:
-    "Grrowzo helps brands grow with premium websites, branding, marketing, and digital solutions.",
+    "Grrowzo helps brands scale with premium websites, branding, marketing, automation and digital solutions.",
+  keywords: [
+    "digital marketing",
+    "web development",
+    "branding agency",
+    "SEO agency",
+    "AI automation",
+  ],
 };
 
 export default function RootLayout({

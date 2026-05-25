@@ -13,14 +13,23 @@ export default function CTASection() {
 
         <div className="flex flex-wrap justify-center gap-4">
 
-          <button className="bg-gradient-to-r from-purple-600 to-cyan-500 px-8 py-4 rounded-full font-medium hover:scale-105 transition-transform">
-            Book Free Consultation
-          </button>
+          <a
+  href="https://wa.me/918989866593?text=Hi%20Grrowzo%2C%20I%20want%20to%20book%20a%20free%20consultation."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-gradient-to-r from-purple-600 to-cyan-500 px-8 py-4 rounded-full font-medium text-lg hover:scale-105 transition duration-300 shadow-[0_0_40px_rgba(168,85,247,0.4)]"
+>
+  Book Free Consultation
+</a>
 
-          <button className="border border-white/20 bg-white/5 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
-            Chat On WhatsApp
-          </button>
-
+          <a
+  href="https://wa.me/918989866593?text=Hi%20Grrowzo%2C%20I%20want%20to%20discuss%20my%20project."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="border border-white/20 px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition duration-300"
+>
+  Chat On WhatsApp
+</a>
         </div>
       </div>
     </section>

@@ -4,17 +4,17 @@ const projects = [
   {
     title: "Luxury Fashion Brand",
     category: "Branding",
-    image: "/images/project2.png",
+    image: "/images/Luxury Fashion Brand.png",
   },
   {
     title: "Modern SaaS Website",
     category: "Web Development",
-    image: "/images/project1.png",
+    image: "/images/Modern SaaS Website.png",
   },
   {
-    title: "Restaurant Marketing",
+    title: "Marketing Dashboard",
     category: "Social Media",
-    image: "/images/project3.png",
+    image: "/images/Marketing Dashboard.png",
   },
 ];
 
