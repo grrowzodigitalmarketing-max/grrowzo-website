@@ -91,7 +91,7 @@ export default function Navbar() {
   </a>
 
   <a
-    href="https://wa.me/918821018500?text=Hi%20Grrowzo%2C%20I%20want%20to%20book%20a%20consultation."
+    href="https://wa.me/918989866593?text=Hi%20Grrowzo%2C%20I%20want%20to%20book%20a%20consultation."
     target="_blank"
     rel="noopener noreferrer"
     className="bg-gradient-to-r from-purple-600 to-cyan-500 px-6 py-3 rounded-full hover:scale-105 transition duration-300 shadow-[0_0_30px_rgba(168,85,247,0.4)] whitespace-nowrap"
