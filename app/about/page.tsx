@@ -80,28 +80,28 @@ export default function AboutPage() {
 
               <div className="grid grid-cols-2 gap-6">
 
-                <div className="bg-black/40 rounded-3xl p-8 border border-white/10 text-center">
-                  <h3 className="text-5xl font-bold text-cyan-400">
-                    100+
+                <div className="bg-black/40 border border-white/10 rounded-3xl p-4 sm:p-6 min-w-0 overflow-hidden">
+                  <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold break-words leading-none text-cyan-400">
+                    <span className="whitespace-nowrap">100+</span>
                   </h3>
 
                   <p className="text-gray-400 mt-3">
-                    Projects Delivered
+                    Projects
                   </p>
                 </div>
 
-                <div className="bg-black/40 rounded-3xl p-8 border border-white/10 text-center">
-                  <h3 className="text-5xl font-bold text-purple-400">
-                    98%
+                <div className="bg-black/40 border border-white/10 rounded-3xl p-4 sm:p-6 min-w-0 overflow-hidden">
+                  <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold break-words leading-none text-purple-400">
+                    <span className="whitespace-nowrap">98%</span>
                   </h3>
 
                   <p className="text-gray-400 mt-3">
-                    Client Satisfaction
+                    Satisfaction
                   </p>
                 </div>
 
-                <div className="bg-black/40 rounded-3xl p-8 border border-white/10 text-center">
-                  <h3 className="text-5xl font-bold text-purple-400">
+                <div className="bg-black/40 border border-white/10 rounded-3xl p-4 sm:p-6 min-w-0 overflow-hidden">
+                  <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold break-words leading-none text-purple-400">
                     5X
                   </h3>
 
@@ -110,9 +110,9 @@ export default function AboutPage() {
                   </p>
                 </div>
 
-                <div className="bg-black/40 rounded-3xl p-8 border border-white/10 text-center">
-                  <h3 className="text-5xl font-bold text-cyan-400">
-                    24/7
+                <div className="bg-black/40 border border-white/10 rounded-3xl p-4 sm:p-6 min-w-0 overflow-hidden">
+                  <h3 className="text-3xl sm:text-5xl md:text-6xl font-bold break-words leading-none text-cyan-400">
+                    <span className="whitespace-nowrap">24/7</span>
                   </h3>
 
                   <p className="text-gray-400 mt-3">
