@@ -1,57 +1,221 @@
 const projects = [
   {
-    slug: "luxury-fashion-brand",
-    title: "Luxury Fashion Brand",
-    category: "Branding",
-    image: "/images/Luxury Fashion Brand.png",
+    slug: "sr-electrical-contractor",
+    title: "SR Electrical & Contractor",
+    category: "Corporate Website",
+    image: "/images/sr-electrical-cover.jpg",
+
     description:
-      "Premium branding and website experience designed for a modern luxury fashion label.",
+      "Corporate website developed for SR Electrical & Contractor featuring project management, admin dashboard, project galleries and responsive design.",
+
+    industry: "Electrical Infrastructure",
+
+    services:
+      "Website Development, Admin Panel, Project Management",
+
+    timeline: "3 Weeks",
+
+    website: "https://srelectricalandcontractor.com",
+
+    overview1:
+      "SR Electrical & Contractor required a modern digital presence to showcase government, industrial, hospital and infrastructure electrical projects.",
+
+    overview2:
+      "We developed a scalable Next.js platform with project categories, image galleries, admin dashboard and responsive design.",
+
+    features: [
+      "Project Management System",
+      "Admin Dashboard",
+      "Project Categories",
+      "Gallery Image Upload",
+      "SEO Optimized Pages",
+      "Mobile Responsive Design",
+    ],
+
+    results: [
+      { value: "50+", label: "Projects Managed" },
+      { value: "100%", label: "Responsive Design" },
+      { value: "Admin", label: "Control Panel" },
+    ],
   },
 
   {
-    slug: "modern-saas-website",
-    title: "Modern SaaS Website",
-    category: "Web Development",
-    image: "/images/Modern SaaS Website.png",
-    description:
-      "Modern SaaS platform with premium UI/UX and scalable architecture.",
-  },
+    slug: "revora-ai-review-system",
+    title: "Revora AI Review System",
+    category: "AI SaaS Platform",
+    image: "/images/revora-cover.png",
 
-  {
-    slug: "marketing-dashboard",
-    title: "Marketing Dashboard",
-    category: "UI/UX Design",
-    image: "/images/Marketing Dashboard.png",
     description:
-      "Advanced analytics dashboard with interactive data visualization.",
-  },
+      "AI-powered review generation and reputation management platform designed to help businesses collect more Google reviews and improve local SEO.",
 
-  {
-    slug: "social-campaign",
-    title: "Social Campaign",
-    category: "Digital Marketing",
-    image: "/images/Social Campaign.jpg",
-    description:
-      "Creative social media campaign designed to maximize audience engagement.",
-  },
+    industry: "AI & Local SEO",
 
-  {
-    slug: "ai-automation-platform",
-    title: "AI Automation Platform",
-    category: "Automation",
-    image: "/images/AI Automation Platform.png",
-    description:
-      "AI-powered automation platform for scalable business operations.",
-  },
+    services:
+      "AI Development, Review Automation, Dashboard Development",
 
-  {
-    slug: "startup-branding-identity",
-    title: "Startup Branding Identity",
-    category: "Branding",
-    image: "/images/Startup Branding Identity.png",
-    description:
-      "Premium startup branding system with modern visual identity.",
+    timeline: "4 Weeks",
+
+    website: "https://revora.grrowzo.com",
+
+    overview1:
+      "Revora AI is an intelligent review management platform developed to help businesses generate AI-powered Google reviews and improve local SEO performance.",
+
+    overview2:
+      "The platform includes AI review generation, QR code review collection, business dashboard, plan management and analytics for reputation growth.",
+
+    features: [
+      "AI Review Generator",
+      "Google Review Integration",
+      "QR Code Review Collection",
+      "Business Dashboard",
+      "Subscription Management",
+      "Review Analytics",
+    ],
+
+    results: [
+      { value: "3X", label: "Review Growth" },
+      { value: "80%", label: "Time Saved" },
+      { value: "AI", label: "Automation" },
+    ],
   },
+  {
+  slug: "wellness-insight-stock-management",
+
+  title: "Wellness Insight Stock Management",
+
+  category: "Inventory Management Software",
+
+  image: "/images/wellness-stock-cover.png",
+
+  description:
+    "Custom inventory and sales management software developed for Wellness Insights to streamline product tracking, stock control, partner management and business reporting.",
+
+  industry: "Health & Wellness",
+
+  services:
+    "Web Application Development, Inventory Management, Admin Dashboard",
+
+  timeline: "2 Weeks",
+
+  website: "https://wellnessinsights.grrowzo.com",
+
+  overview1:
+    "Wellness Insights required a centralized system to manage products, inventory, partners, orders and sales operations from a single dashboard.",
+
+  overview2:
+    "We developed a custom web-based stock management platform with product tracking, category management, partner management, billing and reporting modules.",
+
+  features: [
+    "Inventory Management",
+    "Product Management",
+    "Category & Brand Management",
+    "Stock Tracking",
+    "Partner Management",
+    "Order Management",
+    "Invoice & Billing",
+    "Sales Reports Dashboard",
+    "Revenue Analytics",
+    "Admin Panel"
+  ],
+
+  results: [
+    { value: "30+", label: "Products Managed" },
+    { value: "23+", label: "Partners Managed" },
+    { value: "100%", label: "Digital Inventory" }
+  ]
+},
+{
+  slug: "sor-billing-management-system",
+
+  title: "SOR Billing Management System",
+
+  category: "Business ERP Software",
+
+  image: "/images/sor-billing-cover.png",
+
+  description:
+    "Custom Sales Order & Billing Management System developed to streamline quotations, sales orders, invoicing, inventory tracking and business operations.",
+
+  industry: "Business Automation",
+
+  services:
+    "ERP Development, Billing Software, Inventory Management",
+
+  timeline: "3 Weeks",
+
+  website: "https://sor.srelectricalandcontractor.com/",
+
+  overview1:
+    "The SOR Billing Management System was developed to simplify sales order processing, invoice generation, customer management and inventory tracking from a single centralized platform.",
+
+  overview2:
+    "We created a scalable web-based ERP solution with quotation management, billing workflows, stock monitoring, reporting and role-based access control to improve operational efficiency.",
+
+  features: [
+    "Sales Order Management",
+    "Quotation Management",
+    "Invoice Generation",
+    "Inventory Tracking",
+    "Customer Management",
+    "Stock Management",
+    "Business Reports",
+    "Role Based Access Control",
+    "Revenue Analytics",
+    "Admin Dashboard"
+  ],
+
+  results: [
+    { value: "80%", label: "Faster Order Processing" },
+    { value: "100%", label: "Digital Billing Workflow" },
+    { value: "Real-Time", label: "Inventory Tracking" }
+  ]
+},
+{
+  slug: "jaora-pet-mall",
+
+  title: "Jaora Pet Mall",
+
+  category: "E-Commerce Website",
+
+  image: "/images/jaora-petmall-cover.png",
+
+  description:
+    "Complete e-commerce website developed for Jaora Pet Mall featuring product catalog, online shopping experience, responsive design and secure customer engagement.",
+
+  industry: "E-Commerce & Retail",
+
+  services:
+    "WordPress Development, E-Commerce Setup, UI/UX Design",
+
+  timeline: "2 Weeks",
+
+  website: "https://jaorapetmall.in",
+
+  overview1:
+    "Jaora Pet Mall required a professional online store to showcase products, improve customer reach and enable seamless shopping experience across devices.",
+
+  overview2:
+    "We developed a modern WordPress-based e-commerce platform with product categories, attractive layouts, responsive design and customer-friendly navigation.",
+
+  features: [
+    "WordPress Website",
+    "E-Commerce Store",
+    "Product Catalog",
+    "Category Management",
+    "Responsive Design",
+    "Mobile Friendly Layout",
+    "SEO Optimization",
+    "Secure Checkout",
+    "Customer Inquiry System",
+    "Fast Loading Pages"
+  ],
+
+  results: [
+    { value: "100+", label: "Products Listed" },
+    { value: "100%", label: "Mobile Responsive" },
+    { value: "24/7", label: "Online Availability" }
+  ]
+}
 ];
 
 export default async function Page({
@@ -123,6 +287,7 @@ export default async function Page({
       </div>
 
     </section>
+    
 
     {/* Overview */}
     <section className="pb-24 px-6">
@@ -131,24 +296,13 @@ export default async function Page({
 
         {/* Left */}
         <div className="lg:col-span-2">
+<p className="text-gray-400 text-lg leading-relaxed mb-6">
+  {project.overview1}
+</p>
 
-          <p className="text-cyan-400 uppercase tracking-[4px] text-sm mb-4">
-            Overview
-          </p>
-
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Premium Digital Experience
-          </h2>
-
-          <p className="text-gray-400 text-lg leading-relaxed mb-6">
-            We crafted a cinematic digital experience focused on luxury aesthetics,
-            immersive visuals, smooth interactions, and premium branding.
-          </p>
-
-          <p className="text-gray-400 text-lg leading-relaxed">
-            The project was designed to increase engagement, improve conversions,
-            and deliver a memorable premium brand identity.
-          </p>
+<p className="text-gray-400 text-lg leading-relaxed">
+  {project.overview2}
+</p>
 
         </div>
 
@@ -161,7 +315,7 @@ export default async function Page({
             </p>
 
             <h3 className="text-2xl font-semibold">
-              Fashion
+              {project.industry}
             </h3>
           </div>
 
@@ -171,7 +325,7 @@ export default async function Page({
             </p>
 
             <h3 className="text-2xl font-semibold">
-              Branding & Web Design
+              {project.services}
             </h3>
           </div>
 
@@ -181,16 +335,44 @@ export default async function Page({
             </p>
 
             <h3 className="text-2xl font-semibold">
-              6 Weeks
+              {project.timeline}
             </h3>
           </div>
 
         </div>
-
+<a
+  href={project.website}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full flex justify-center items-center py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold"
+>
+  🌐 Visit Live Website
+</a>
       </div>
 
     </section>
+<section className="pb-24 px-6">
+  <div className="max-w-7xl mx-auto">
 
+    <h2 className="text-4xl font-bold mb-10">
+      Key Features
+    </h2>
+
+   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  {project.features?.map((feature, index) => (
+    <div
+      key={index}
+      className="bg-white/5 p-6 rounded-3xl"
+    >
+      {feature}
+    </div>
+  ))}
+
+</div>
+
+  </div>
+</section>
     {/* Results */}
     <section className="pb-32 px-6 relative overflow-hidden">
 
@@ -212,41 +394,24 @@ export default async function Page({
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          <div className="bg-white/5 border border-white/10 rounded-[32px] p-10 text-center">
+  {project.results?.map((item, index) => (
 
-            <h3 className="text-6xl font-bold text-cyan-400 mb-4">
-              +387%
-            </h3>
+    <div
+      key={index}
+      className="bg-white/5 border border-white/10 rounded-[32px] p-10 text-center"
+    >
 
-            <p className="text-gray-400">
-              Engagement Growth
-            </p>
+      <h3 className="text-6xl font-bold text-cyan-400 mb-4">
+        {item.value}
+      </h3>
 
-          </div>
+      <p className="text-gray-400">
+        {item.label}
+      </p>
 
-          <div className="bg-white/5 border border-white/10 rounded-[32px] p-10 text-center">
-
-            <h3 className="text-6xl font-bold text-purple-400 mb-4">
-              5X
-            </h3>
-
-            <p className="text-gray-400">
-              Conversion Increase
-            </p>
-
-          </div>
-
-          <div className="bg-white/5 border border-white/10 rounded-[32px] p-10 text-center">
-
-            <h3 className="text-6xl font-bold text-cyan-400 mb-4">
-              98%
-            </h3>
-
-            <p className="text-gray-400">
-              Customer Satisfaction
-            </p>
-
-          </div>
+    </div>
+  ))
+}
 
         </div>
 

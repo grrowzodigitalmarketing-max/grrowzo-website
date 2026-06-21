@@ -7,52 +7,68 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Luxury Fashion Brand",
-    category: "Branding",
-    image: "/images/Luxury Fashion Brand.png",
-    tags: ["Branding", "UI Design", "Marketing"],
-    slug: "luxury-fashion-brand",
-  },
+  title: "SR Electrical & Contractor",
+  category: "Corporate Website",
+  image: "/images/sr-electrical-cover.jpg",
+  tags: [
+    "Next.js",
+    "Admin Panel",
+    "Project Management"
+  ],
+  slug: "sr-electrical-contractor",
+  industry: "Electrical Infrastructure",
+  services: "Website Development, Admin Panel",
+  timeline: "3 Weeks",
+},
+{
+  slug: "revora-ai-review-system",
+  title: "Revora AI Review System",
+  category: "AI SaaS Platform",
+  image: "/images/revora-cover.png",
+  tags: ["AI", "SaaS", "SEO"],
 
-  {
-    title: "Modern SaaS Website",
-    category: "Web Development",
-    image: "/images/Modern SaaS Website.png",
-    tags: ["Branding", "UI Design", "Marketing"],
-    slug: "modern-saas-website",
-  },
+  description:
+    "AI-powered review generation and reputation management platform designed to help businesses collect more Google reviews and improve local SEO.",
 
-  {
-    title: "Marketing Dashboard",
-    category: "UI/UX Design",
-    image: "/images/Marketing Dashboard.png",
-    tags: ["Branding", "UI Design", "Marketing"],
-    slug: "marketing-dashboard",
-  },
+  industry: "AI & Local SEO",
+  services: "SaaS Development, AI Integration, Dashboard Development",
+  timeline: "8 Weeks",
+},
+{
+  title: "Wellness Insight Stock Management",
+  category: "Inventory Management Software",
+  image: "/images/wellness-stock-cover.png",
+  tags: ["Inventory", "Dashboard", "Management"],
+  slug: "wellness-insight-stock-management",
+},
+{
+  slug: "sor-billing-management-system",
+  title: "SOR Billing Management System",
+  category: "Business ERP Software",
+  image: "/images/sor-billing-cover.png",
+  tags: ["billing", "Management", "Excel Export"],
+  description:
+    "Custom Sales Order & Billing Management System developed to streamline quotations, sales orders, invoicing, stock tracking and business operations.",
 
-  {
-    title: "Social Campaign",
-    category: "Digital Marketing",
-    image: "/images/Social Campaign.jpg",
-    tags: ["Branding", "UI Design", "Marketing"],
-    slug: "social-campaign",
-  },
+  industry: "Business Automation",
+  services:
+    "ERP Development, Billing Software, Inventory Management",
 
-  {
-    title: "AI Automation Platform",
-    category: "Automation",
-    image: "/images/AI Automation Platform.png",
-    tags: ["Branding", "UI Design", "Marketing"],
-    slug: "ai-automation-platform",
-  },
+  timeline: "3 Weeks",
+},
+{
+  title: "Jaora Pet Mall",
+  category: "E-Commerce Website",
+  image: "/images/jaora-petmall-cover.png",
+  slug: "jaora-pet-mall",
 
-  {
-    title: "Startup Branding Identity",
-    category: "Branding",
-    image: "/images/Startup Branding Identity.png",
-    tags: ["Branding", "UI Design", "Marketing"],
-    slug: "startup-branding-identity",
-  },
+  tags: [
+    "WordPress",
+    "E-Commerce",
+    "WooCommerce",
+    "Responsive Design"
+  ]
+},
 ];
 
 export default function PortfolioPage() {
