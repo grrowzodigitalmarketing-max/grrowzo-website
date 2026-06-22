@@ -7,16 +7,16 @@ import "swiper/css";
 
 const testimonials = [
   {
-    name: "Rahul Sharma",
-    role: "Startup Founder",
+    name: "Vinit Maheshwari",
+    role: "Director, SR Electrical & Contractorr",
     review:
-      "Grrowzo completely transformed our online presence with a premium website and marketing strategy.",
+      "Grrowzo Digital Marketing developed a modern and professional website for SR Electrical & Contractor that perfectly represents our expertise in government, industrial and infrastructure electrical projects. Their design quality, technical execution and ongoing support exceeded our expectations.",
   },
   {
-    name: "Priya Verma",
-    role: "Fashion Brand Owner",
+    name: "Farha Syed",
+    role: "Jaora Pet Mall",
     review:
-      "The branding and creative quality were absolutely top-notch. Highly recommended.",
+      "We are thrilled with the outstanding results delivered by Grrowzo Digital Marketing for Jaora Pet Mall. Their expert team successfully ranked our website 1st on Google through targeted SEO strategies and powerful keyword optimization. Thanks to their dedicated efforts, our pet supplies business now enjoys top search engine visibility, increased organic traffic, and a strong online presence",
   },
   {
     name: "Amit Patel",

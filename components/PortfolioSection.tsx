@@ -1,20 +1,24 @@
 import Image from "next/image";
 import FadeUp from "./FadeUp";
+import Link from "next/link";
 const projects = [
   {
-    title: "Luxury Fashion Brand",
-    category: "Branding",
-    image: "/images/Luxury Fashion Brand.png",
+    title: "Revora AI Review System",
+    category: "AI SaaS",
+    image: "/images/revora-cover.png",
+    slug: "revora-ai-review-system",
   },
   {
-    title: "Modern SaaS Website",
-    category: "Web Development",
-    image: "/images/Modern SaaS Website.png",
+    title: "SR Electrical & Contractor",
+  category: "Corporate Website",
+  image: "/images/sr-electrical-cover.jpg",
+  slug: "sr-electrical-contractor",
   },
   {
-    title: "Marketing Dashboard",
-    category: "Social Media",
-    image: "/images/Marketing Dashboard.png",
+    title: "Wellness Insight Stock Management",
+    category: "Inventory Software",
+    image: "/images/wellness-stock-cover.png",
+    slug: "wellness-insight-stock-management",
   },
 ];
 
@@ -72,9 +76,12 @@ export default function PortfolioSection() {
 
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
 
-                <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition-transform">
-                  View Project
-                </button>
+                <Link
+  href={`/portfolio/${project.slug}`}
+  className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-white text-black font-semibold hover:scale-105 transition"
+>
+  View Project
+</Link>
 
               </div>
 
