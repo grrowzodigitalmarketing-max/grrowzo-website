@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("client")
+  createdAt DateTime @default(now())
+
+  businesses Business[]
+}
+
+model Business {
+  id               Int      @id @default(autoincrement())
+  userId           Int
+  businessName     String
+  googleReviewLink String @unique
+
+  businessCategory String?
+  seoKeywords      String?
+  city             String?
+  qrCode           String?
+  slug             String   @unique
+  createdAt        DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id])
+
+  feedbacks Feedback[]
+
+  plan   String @default("Demo")
+  status String @default("PENDING")
+
+  reviewLimit Int @default(25)
+  reviewsUsed Int @default(0)
+
+  
+
+  reviewCount   Int @default(0)
+  
+  startDate  DateTime?
+  expiryDate DateTime?
+
+  ownerName String?
+  mobile    String?
+
+  paymentStatus String @default("NONE")
+
+  logo      String?
+
+  email     String?
+
+  payments      PaymentRequest[]
+  notifications Notification[]
+
+  packageAmount Int @default(0)
+}
+
+model Feedback {
+  id           Int      @id @default(autoincrement())
+  businessId   Int
+  rating       Int
+  feedback     String?
+  customerName String?
+  createdAt    DateTime @default(now())
+
+  business Business @relation(fields: [businessId], references: [id])
+}
+
+model PaymentRequest {
+  id Int @id @default(autoincrement())
+
+  businessId Int
+
+  plan String
+
+  duration Int
+
+  amount Int
+  
+  transactionId String?
+
+  requestType String   @default("UPGRADE")
+
+  screenshot String?
+
+  status String @default("PENDING")
+
+  adminRemark String?
+
+  notes      String?
+
+  createdAt DateTime @default(now())
+
+  approvedAt DateTime?
+
+  business Business @relation(fields: [businessId], references: [id])
+}
+
+model Notification {
+  id Int @id @default(autoincrement())
+
+  businessId Int
+
+  title String
+
+  message String
+
+  isRead Boolean @default(false)
+
+  createdAt DateTime @default(now())
+
+  business Business @relation(fields: [businessId], references: [id])
+}
+model DemoUsage {
+
+  id Int @id @default(autoincrement())
+
+  googleReviewLink String @unique
+
+  createdAt DateTime @default(now())
+}
