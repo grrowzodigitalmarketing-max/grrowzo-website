@@ -55,7 +55,7 @@ const projects = [
 
     timeline: "4 Weeks",
 
-    website: "https://revora.grrowzo.com",
+    website: "https:///revora",
 
     overview1:
       "Revora AI is an intelligent review management platform developed to help businesses generate AI-powered Google reviews and improve local SEO performance.",

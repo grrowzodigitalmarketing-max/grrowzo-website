@@ -12,6 +12,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactSection from "@/components/ContactSection";
 import AboutSection from "@/components/AboutSection";
 import LogoMarquee from "@/components/LogoMarquee";
+import ProductsSection from "@/components/ProductsSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <LogoMarquee />
+      <ProductsSection />
       <ServicesSection />
       <PortfolioSection />
       <TestimonialsSection />

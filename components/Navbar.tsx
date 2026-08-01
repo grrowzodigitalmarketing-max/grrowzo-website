@@ -4,13 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,7 +68,61 @@ export default function Navbar() {
           <Link href="/services" className={navLinkClass("/services")}>
             Services
           </Link>
+          <div
+  className="relative group"
+  onMouseEnter={() => setProductsOpen(true)}
+  onMouseLeave={() => setProductsOpen(false)}
+>
+  <button className="flex items-center gap-1 text-gray-300 hover:text-white transition">
+    Products
+    <ChevronDown
+      size={16}
+      className={`transition duration-300 ${
+        productsOpen ? "rotate-180" : ""
+      }`}
+    />
+  </button>
 
+  <div
+    className={`absolute top-10 left-0 w-72 rounded-2xl border border-white/10 bg-black/90 backdrop-blur-2xl shadow-2xl transition-all duration-300 ${
+      productsOpen
+        ? "opacity-100 visible translate-y-0"
+        : "opacity-0 invisible -translate-y-2"
+    }`}
+  >
+    <Link
+      href="/revora"
+      className="block px-6 py-5 hover:bg-white/5 transition border-b border-white/10"
+    >
+      <div className="font-semibold text-white">
+        Revora AI
+      </div>
+
+      <div className="text-sm text-gray-400 mt-1">
+        AI Reputation Management Platform
+      </div>
+    </Link>
+
+    <Link
+      href="/ai-os"
+      className="block px-6 py-5 hover:bg-white/5 transition"
+    >
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-white">
+          GrrowZo AI OS
+        </span>
+
+        <span className="text-xs bg-cyan-500/20 text-cyan-300 px-2 py-1 rounded-full">
+          BETA
+        </span>
+      </div>
+
+      <div className="text-sm text-gray-400 mt-1">
+        AI Agents • Automation • Workspace
+      </div>
+    </Link>
+  </div>
+</div>
           <Link href="/portfolio" className={navLinkClass("/portfolio")}>
             Portfolio
           </Link>
@@ -81,14 +136,12 @@ export default function Navbar() {
         {/* Desktop CTA */}
        <div className="hidden md:flex items-center gap-4">
 
-  <a
-    href="https://whatsappmarketing.grrowzo.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-white/10 border border-white/10 hover:border-cyan-400 hover:bg-cyan-500/10 px-5 py-2 rounded-full text-sm font-medium transition duration-300 whitespace-nowrap"
-  >
-    WhatsApp Marketing
-  </a>
+  <Link
+  href="/revora"
+  className="bg-white/10 border border-white/10 hover:border-cyan-400 hover:bg-cyan-500/10 px-5 py-2 rounded-full text-sm font-medium transition duration-300 whitespace-nowrap"
+>
+  Revora AI
+</Link>
 
   <a
     href="https://wa.me/918989866593?text=Hi%20Grrowzo%2C%20I%20want%20to%20book%20a%20consultation."
@@ -145,7 +198,31 @@ export default function Navbar() {
           >
             Services
           </Link>
+          <div className="text-center">
+  <p className="text-gray-400 text-base mb-3">
+    Products
+  </p>
 
+  <div className="flex flex-col gap-4">
+
+    <Link
+      href="/revora"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-cyan-400 transition"
+    >
+      Revora AI
+    </Link>
+
+    <Link
+      href="/ai-os"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-cyan-400 transition"
+    >
+      GrrowZo AI OS
+    </Link>
+
+  </div>
+</div>
           <Link
             href="/portfolio"
             onClick={() => setMenuOpen(false)}
