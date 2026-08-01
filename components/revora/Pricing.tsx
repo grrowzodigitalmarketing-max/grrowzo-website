@@ -134,7 +134,7 @@ export default function Pricing() {
               </ul>
 
               <Link
-                href="https://revora.grrowzo.com/login"
+                href="https:///revora/login"
                 className={`mt-10 inline-flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 font-semibold transition
                 ${
                   plan.highlighted

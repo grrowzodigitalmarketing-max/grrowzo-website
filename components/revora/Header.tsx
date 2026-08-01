@@ -72,14 +72,14 @@ export default function Header() {
         <div className="hidden items-center gap-4 lg:flex">
 
           <Link
-            href="/login"
+            href="/revora/login"
             className="rounded-xl border border-white/10 px-5 py-3 text-sm font-medium text-white transition hover:border-cyan-400"
           >
             Login
           </Link>
 
           <Link
-            href="/register"
+            href="/revora/register"
             className="rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 px-6 py-3 text-sm font-semibold text-white transition hover:scale-105"
           >
             Start Free Trial

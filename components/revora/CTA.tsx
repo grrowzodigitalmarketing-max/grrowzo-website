@@ -46,7 +46,7 @@ export default function CTA() {
             <div className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row">
 
               <Link
-                href="https://revora.grrowzo.com/login"
+                href="https:///revora/login"
                 className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 font-semibold text-white transition duration-300 hover:scale-105"
               >
                 Start Free Trial

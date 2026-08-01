@@ -54,7 +54,7 @@ export default function Hero() {
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="https://revora.grrowzo.com/register"
+              href="https:///revora/register"
               className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 font-semibold text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/40"
             >
               Start Free Trial

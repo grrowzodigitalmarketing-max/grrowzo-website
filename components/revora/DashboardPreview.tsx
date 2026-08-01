@@ -161,7 +161,7 @@ export default function DashboardPreview() {
 
         <div className="mt-16 flex justify-center">
           <a
-            href="https://revora.grrowzo.com/login"
+            href="https:///revora/login"
             className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-600 px-8 py-4 font-semibold text-white transition hover:scale-105"
           >
             Explore Dashboard
