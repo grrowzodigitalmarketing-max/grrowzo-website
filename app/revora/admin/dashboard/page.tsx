@@ -275,7 +275,7 @@ duration-300"
             </p>
           </a>
         <a
-  href="/admin/feedbacks"
+  href="/revora/admin/feedbacks"
   className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 hover:border-purple-500
 hover:shadow-lg
 hover:shadow-purple-500/20
