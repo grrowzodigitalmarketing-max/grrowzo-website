@@ -8,6 +8,7 @@ import PortfolioSection from "@/components/PortfolioSection";
 import MouseGlow from "@/components/MouseGlow";
 import ScrollProgress from "@/components/ScrollProgress";
 import Loader from "@/components/Loader";
+import RestoPulsePopup from "@/components/RestoPulsePopup";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ContactSection from "@/components/ContactSection";
 import AboutSection from "@/components/AboutSection";
@@ -19,6 +20,7 @@ export default function Home() {
     <main className="bg-black text-white overflow-hidden" >
       
       <Loader />
+      <RestoPulsePopup />
       <ScrollProgress />
       <MouseGlow />
       <WhatsAppButton />
